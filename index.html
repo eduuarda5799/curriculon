@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Currículo - Maria Eduarda Campos Oliveira</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      border-bottom: 2px solid rgba(56,189,248,0.3);
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: var(--accent);
+    }
+    header p {
+      color: var(--muted);
+      font-size: 1rem;
+      margin: 6px 0;
+    }
+
+    .links {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    section h2 {
+      color: var(--accent);
+      margin-top: 0;
+      font-size: 1.2rem;
+      border-bottom: 1px solid rgba(56,189,248,0.2);
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .skills, .langs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      background: rgba(56,189,248,0.1);
+      border: 1px solid rgba(56,189,248,0.3);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .education, .experience {
+      margin-bottom: 12px;
+    }
+
+    .job-title {
+      font-weight: 600;
+      color: #e2e8f0;
+      font-size: 1rem;
+    }
+
+    .period {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 20px 0 40px;
+      border-top: 1px solid rgba(56,189,248,0.2);
+      margin-top: 20px;
+    }
+
+    @media (min-width: 800px) {
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .full {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maria Eduarda Campos Oliveira</h1>
+    <p>Programadora de Sistemas</p>
+    <p>Recife - PE | (81) 99636-2404 | maria.eduarda5799@gmail.com</p>
+
+    <div class="links">
+      <a href="https://www.linkedin.com/in/maria-eduarda-campos-1059941a9/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/eduuarda5799" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="full">
+      <h2>Sobre Mim</h2>
+      <p>Sou uma profissional apaixonada por tecnologia, em início de carreira na área de desenvolvimento de sistemas. Tenho conhecimentos em lógica de programação, banco de dados e computação em nuvem.E busco oportunidades para crescer e contribuir com soluções inovadoras.</p>
+    </section>
+
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <div class="skills">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Python</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">Banco de Dados (Intermediário)</span>
+        <span class="pill">Cloud</span>
+        <span class="pill">Lógica de Programação</span>
+        <span class="pill">Informática Básica</span>
+        <span class="pill">Programação de Sistemas</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formação Acadêmica</h2>
+      <div class="education">
+        <div class="job-title">Curso de Informática Básica</div>
+        <div class="period">Concluído</div>
+      </div>
+      <div class="education">
+        <div class="job-title">Curso de Lógica de Programação</div>
+        <div class="period">Concluído</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <div class="langs">
+        <span class="pill">Português (nativo)</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Maria Eduarda Campos Oliveira — Todos os direitos reservados
+  </footer>
+</body>
+</html>
